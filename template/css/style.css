@@ -1414,7 +1414,10 @@ table {
   transition: 0.5s;
 }
 .collapse-item.active {
-  max-height: 100vh;
+  max-height: 100rem;
+}
+.collapse-item.active .collapse-item-head img {
+  transform: rotate(180deg);
 }
 .collapse-item-head {
   height: 110px;
@@ -1425,8 +1428,12 @@ table {
   font-weight: 700;
   color: #000000;
 }
+.collapse-item-head img {
+  transition: 0.3s;
+}
 .collapse-item-body {
   background-color: #FFFFFF;
+  height: auto;
 }
 .collapse-child {
   width: 100%;
@@ -1440,6 +1447,9 @@ table {
 }
 .collapse-child.active {
   max-height: 100vh;
+}
+.collapse-child.active .collapse-child-head .arr {
+  transform: rotate(180deg);
 }
 .collapse-child-head {
   width: 100%;
@@ -1468,6 +1478,9 @@ table {
   font-size: 24px;
   font-weight: 600;
   color: #000000;
+}
+.collapse-child-head .arr {
+  transition: 0.3s;
 }
 .collapse-child-body {
   display: flex;
