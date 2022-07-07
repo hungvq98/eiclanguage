@@ -14,7 +14,6 @@
         top: -58px;
         z-index: 2;
         transform: rotate(45deg);
-
         &::after {
             content: "";
             height: 40px;
@@ -26,7 +25,6 @@
             transform: rotate(103deg);
             z-index: 1;
         }
-
         &::before {
             content: "";
             height: 40px;
@@ -38,7 +36,6 @@
             transform: rotate(75deg);
             z-index: 1;
         }
-
         img {
             transform: rotate(-45deg);
             z-index: 2;
@@ -46,7 +43,6 @@
                 margin-top: -20px;
                 margin-left: -20px;
             }
-
             &.line {
                 width: 210px;
                 position: absolute;
@@ -59,12 +55,63 @@
         padding-bottom: 70px
     }
     &-menu {
-        @include flex(flex-start, space-between);
+        @include flexx;
+        align-items: stretch;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        margin-bottom: -30px;
         .head {
             font-size: 18px;
             font-weight: 600;
             color: $color-white;
             margin-bottom: 16px;
+        }
+        &-item {
+            padding: 0 15px;
+            margin-bottom: 30px;
+            width: calc(100% /4);
+            &-first {
+                width: calc(100%*(4/12));
+                @include max(1200px) {
+                    width: calc(100% /2);
+                    order: 4;
+                }
+                @include max(768px) {
+                    width: 100%;
+                    order: 3;
+                }
+            }
+            &-second {
+                width: calc(100%*(2/12));
+                @include max(1200px) {
+                    width: calc(100% /2);
+                    order: 1;
+                }
+                @include max(400px) {
+                    width: 100%;
+                }
+            }
+            &-third {
+                width: calc(100%*(2/12));
+                @include max(1200px) {
+                    width: calc(100% /2);
+                    order: 2;
+                }
+                @include max(400px) {
+                    width: 100%;
+                }
+            }
+            &-four {
+                width: calc(100%*(4/12));
+                @include max(1200px) {
+                    width: calc(100% /2);
+                    order: 3;
+                }
+                @include max(768px) {
+                    width: 100%;
+                    order: 4;
+                }
+            }
         }
         ul {
             li {
@@ -89,7 +136,7 @@
                     }
                 }
                 &.language {
-                    @include flex(center,flex-start);
+                    @include flex(center, flex-start);
                     i {
                         color: $color-white;
                         margin-left: -5px;
@@ -97,10 +144,10 @@
                 }
             }
         }
-
     }
     &-socials {
-        @include flex(center, center);
+        @include flexx;
+        align-items: center;
         a {
             margin-right: 8px;
             &:last-child {
@@ -113,29 +160,32 @@
             padding: 5px;
             border-radius: 50px;
             color: $color-gray-dark;
-            @include flex(center,center);
+            @include flex(center, center);
             background-color: $color-white-opa6;
-            
             transition: 0.3s;
-            
             &:hover {
                 background-color: $color-white;
             }
         }
     }
     &-pluginfb {
+        padding-top: calc(100%*(300/368));
+        position: relative;
         overflow: hidden;
-        height: 300px;
+        display: block;
         img {
-           @include img100x;
+            @include mid;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
     &-cre {
         width: 100%;
         height: 48px;
         background-color: $color-gray-or;
-        @include flex(center,center);
-        h3{
+        @include flex(center, center);
+        h3 {
             color: $color-white;
             font-size: 14px;
             font-weight: 600;
