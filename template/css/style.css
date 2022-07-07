@@ -1430,6 +1430,7 @@ table {
 }
 .collapse-item-head img {
   transition: 0.3s;
+  cursor: pointer;
 }
 .collapse-item-body {
   background-color: #FFFFFF;
@@ -1450,6 +1451,7 @@ table {
 }
 .collapse-child.active .collapse-child-head .arr {
   transform: rotate(180deg);
+  cursor: pointer;
 }
 .collapse-child-head {
   width: 100%;
