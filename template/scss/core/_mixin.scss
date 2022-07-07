@@ -11,6 +11,13 @@
     justify-content: $justify-content;
 }
 
+@mixin mid() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @mixin flexx() {
     display: -webkit-flex;
     display: -moz-flex;

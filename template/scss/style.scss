@@ -2,10 +2,10 @@
 @import url("../js/libs/swiper/swiper-bundle.min.css");
 @import url("../js/libs/boxicons-2.1.2/css/boxicons.css");
 //Core
+@import "./core/reset";
 @import "./core/animation";
 @import "./core/base";
 @import "./core/mixin";
-@import "./core/reset";
 @import "./core/variable";
 //Component
 @import "./component/header";
