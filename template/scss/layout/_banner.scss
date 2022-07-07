@@ -595,6 +595,7 @@
 
             img {
                 transition: 0.3s;
+                cursor: pointer;
             }
         }
 
@@ -616,6 +617,7 @@
             .collapse-child-head {
                 .arr {
                     transform: rotate(180deg);
+                    cursor: pointer;
                 }
             }
         }
