@@ -11,6 +11,49 @@
     justify-content: $justify-content;
 }
 
+@mixin flexx() {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+@mixin flex-st() {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: stretch;
+    align-items: stretch;
+    -webkit-align-items: stretch;
+}
+
+@mixin flex-ct() {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+@mixin mid-flex() {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
 @mixin cir ($value) {
     width: $value;
     height: $value;
@@ -56,13 +99,14 @@
     height: 100%;
     object-fit: contain;
 }
-@mixin  img100 {
+
+@mixin img100 {
     height: 100%;
     width: auto;
     object-fit: cover;
-} 
+}
 
-@mixin  img100x {
+@mixin img100x {
     height: 100%;
     width: 100%;
     object-fit: cover;
