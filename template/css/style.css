@@ -1997,7 +1997,6 @@ label {
 .newsSlider-title .title-text {
   font-size: 40px;
   font-weight: 600;
-  background-color: #FFFFFF;
   color: #000000;
   z-index: 2;
   margin-left: -40px;
@@ -2625,7 +2624,6 @@ label {
 .main .home-adv-title .title-text {
   font-size: 40px;
   font-weight: 600;
-  background-color: #FFFFFF;
   color: #000000;
   z-index: 2;
   margin-left: -40px;
@@ -3634,4 +3632,6 @@ label {
   text-align: center;
   vertical-align: middle;
   border-bottom: 0;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
