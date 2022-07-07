@@ -1,0 +1,43 @@
+.listCard {
+    width: 100%;
+    @include flex(flex-start,flex-start);
+    flex-wrap: wrap;
+    margin: 0 -12px;
+    &-item {
+        padding: 24px;
+        margin: 12px;
+        width: calc(33.3% - 24px);
+        box-shadow: $shadow30;
+        background-color: $color-white;
+        border-radius: 12px;
+        border-bottom: 5px solid $color-green-dark;
+        text-align: left;
+        .img {
+            min-height: 200px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            width: 100%;
+            img {
+                @include img100x;
+            }
+        }
+        .title {
+            color:$color-black;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        .para {
+            font-size: 16px;
+            font-weight: 400;
+            color: $color-gray;
+            margin-bottom: 24px;
+
+        }
+        .xct {
+            color: $color-green;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}

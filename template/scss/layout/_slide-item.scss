@@ -1,0 +1,194 @@
+.newsSlider {
+    font-family: 'Lato', sans-serif;
+    height: auto;
+    &-wrap {
+        padding: 70px 0;
+    }
+    &-title {
+        @include flex(center, flex-start);
+        margin-bottom: 60px;
+
+        .title-sqr {
+            position: relative;
+            @include sqr(77px);
+            border-radius: 6px;
+
+            @include flex(center, center);
+            margin-left: -42px;
+
+            img {
+                width: 77px;
+            }
+
+        }
+
+        .title-text {
+            font-size: 40px;
+            font-weight: 600;
+            background-color: $color-white;
+            color: $color-black;
+            z-index: 2;
+            margin-left: -40px;
+        }
+
+        span {
+            height: 50px;
+            width: 78px;
+            border-bottom: 2px solid $color-green;
+            margin-left: 20px;
+        }
+    }
+    .swiper-wrapper {
+        margin-bottom: 70px;
+    }
+    &-item {
+        padding: 24px;
+        width: 90%;
+        box-shadow: $shadow31;
+        border-radius: 12px;
+        border-bottom: 5px solid $color-green-dark;
+        text-align: left;
+        .img {
+            min-height: 200px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            img {
+                @include img100x;
+            }
+        }
+        .title {
+            color:$color-black;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        .para {
+            font-size: 16px;
+            font-weight: 400;
+            color: $color-gray;
+            margin-bottom: 24px;
+
+        }
+        .xct {
+            color: $color-green;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    &-scroll {
+        padding-bottom: 70px;
+        padding-top: 20px;
+        &-wrap {
+            width: 100%;
+            display: flex;
+        }
+        .scroll-note {
+            margin-left: auto;
+            width: 190px;
+            &-box {
+                span{
+                    color: $color-gray;
+                }
+            } 
+        }
+    }
+
+}
+
+//small
+.newsSmall {
+    font-family: 'Lato', sans-serif;
+    height: auto;
+    &-wrap {
+        padding: 70px 0;
+    }
+    &-title {
+        @include flex(center, flex-start);
+        margin-bottom: 60px;
+
+        .title-sqr {
+            position: relative;
+            @include sqr(77px);
+            border-radius: 6px;
+
+            @include flex(center, center);
+            margin-left: -42px;
+
+            img {
+                width: 77px;
+            }
+
+        }
+
+        .title-text {
+            font-size: 40px;
+            font-weight: 600;
+            background-color: $color-white;
+            color: $color-black;
+            z-index: 2;
+            margin-left: -40px;
+        }
+
+        span {
+            height: 50px;
+            width: 78px;
+            border-bottom: 2px solid $color-green;
+            margin-left: 20px;
+        }
+    }
+    .swiper-wrapper {
+        margin-bottom: 70px;
+    }
+    &-item {
+        padding: 24px;
+        width: 90%;
+        box-shadow: $shadow31;
+        border-radius: 12px;
+        border-bottom: 5px solid $color-green-dark;
+        text-align: left;
+        .img {
+            min-height: 200px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            img {
+                @include img100x;
+            }
+        }
+        .title {
+            color:$color-black;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        .para {
+            font-size: 16px;
+            font-weight: 400;
+            color: $color-gray;
+            margin-bottom: 24px;
+
+        }
+        .xct {
+            color: $color-green;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    &-scroll {
+        padding-bottom: 70px;
+        padding-top: 20px;
+        &-wrap {
+            width: 100%;
+            display: flex;
+        }
+        .scroll-note {
+            margin-left: auto;
+            width: 190px;
+            &-box {
+                span{
+                    color: $color-gray;
+                }
+            } 
+        }
+    }
+
+}

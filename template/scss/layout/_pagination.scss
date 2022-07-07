@@ -1,0 +1,29 @@
+.pagination {
+    width: 100%;
+    padding: 24px;
+    &-wrap {
+        margin: auto;
+        width: max-content;
+        @include flex(center,center);
+    }
+    &-btn {
+        @include sqr(48px);
+        border-radius: 12px;
+        background:$color-white;
+        color: $color-green;
+        @include flex(center,center);
+        transition: 0.5s all;
+        margin-right: 8px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.active {
+            color: $color-white;
+            background: linear-gradient(to right,$color-green, $color-green-dark);
+        }
+        &:hover {
+            color: $color-white;
+            background: linear-gradient(to right,$color-green, $color-green-dark);
+        }
+    }
+}

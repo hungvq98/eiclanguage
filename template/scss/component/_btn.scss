@@ -1,0 +1,50 @@
+.btn {
+    position: relative;
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 100px;
+    @include flex(center,center);
+    color: $color-white;
+    &-login {
+        background:linear-gradient(to right, $color-green, $color-green-dark);
+        min-width: 147px;
+        i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        span {
+            color: $color-white;
+            margin-top: -3px;
+        }
+        
+    }
+    &-language {
+        background-color: $color-green;
+        border-radius: 100px;
+        color: $color-white;
+    }
+    &-green {
+        height: 64px;
+        border-radius: 12px;
+        font-size: 24px;
+        font-weight: 600;
+        margin-right: 8px;
+        background-color: $color-green;
+        
+    }
+    &-yellow {
+        height: 64px;
+        border-radius: 12px;
+        font-size: 24px;
+        font-weight: 600;
+        margin-right: 8px;
+        background-color: $color-yellow;
+    }
+    &-red {
+        height: 64px;
+        border-radius: 12px;
+        font-size: 24px;
+        font-weight: 600;
+        background-color: $color-orange;
+    }
+}
