@@ -295,6 +295,38 @@ label {
   cursor: pointer;
 }
 
+.dnor {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: stretch;
+  align-items: stretch;
+  -webkit-align-items: stretch;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+}
+.dnor-item {
+  padding: 0 15px;
+}
+
+.dmini {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: stretch;
+  align-items: stretch;
+  -webkit-align-items: stretch;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+.dmini-item {
+  padding: 0 5px;
+}
+
 .header {
   height: 88px;
   background-color: #FFFFFF;
@@ -2595,114 +2627,6 @@ label {
   margin-top: 32px;
   max-width: 480px;
 }
-.main .home-adv {
-  width: 100%;
-  padding: 100px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.main .home-adv-title {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 60px;
-}
-.main .home-adv-title .title-sqr {
-  position: relative;
-  width: 77px;
-  height: 77px;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: -42px;
-}
-.main .home-adv-title .title-sqr img {
-  width: 77px;
-}
-.main .home-adv-title .title-text {
-  font-size: 40px;
-  font-weight: 600;
-  color: #000000;
-  z-index: 2;
-  margin-left: -40px;
-}
-.main .home-adv-title span {
-  height: 50px;
-  width: 78px;
-  border-bottom: 2px solid #399E20;
-  margin-left: 20px;
-}
-.main .home-adv-box {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.main .home-adv-box .box-content {
-  font-size: 24px;
-  font-weight: 600;
-  width: 40%;
-  max-width: 384px;
-  margin-right: 100px;
-  line-height: 1.5;
-}
-.main .home-adv-box .box-fee {
-  width: 20%;
-  margin-right: 62px;
-}
-.main .home-adv-box .box-quality {
-  width: 20%;
-  margin-right: 62px;
-}
-.main .home-adv-box .box-time {
-  width: 20%;
-}
-.main .home-adv-box .box-content,
-.main .home-adv-box .box-fee,
-.main .home-adv-box .box-quality,
-.main .home-adv-box .box-time {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-.main .home-adv-box .box-content img,
-.main .home-adv-box .box-fee img,
-.main .home-adv-box .box-quality img,
-.main .home-adv-box .box-time img {
-  width: 56px;
-  margin-bottom: 24px;
-}
-.main .home-adv-box .box-content span,
-.main .home-adv-box .box-fee span,
-.main .home-adv-box .box-quality span,
-.main .home-adv-box .box-time span {
-  font-size: 40px;
-  color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.main .home-adv-box .box-content span img,
-.main .home-adv-box .box-fee span img,
-.main .home-adv-box .box-quality span img,
-.main .home-adv-box .box-time span img {
-  margin-top: 20px;
-  width: 20px;
-  height: 10px;
-  margin-left: 8px;
-}
-.main .home-adv-box .box-content p,
-.main .home-adv-box .box-fee p,
-.main .home-adv-box .box-quality p,
-.main .home-adv-box .box-time p {
-  font-size: 16px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
 .main .home-video {
   position: relative;
   height: 46.875vw;
@@ -3142,6 +3066,142 @@ label {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.home-adv {
+  width: 100%;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-adv-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+}
+.home-adv-title .title-sqr {
+  position: relative;
+  width: 77px;
+  height: 77px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -42px;
+}
+.home-adv-title .title-sqr img {
+  width: 77px;
+}
+.home-adv-title .title-text {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+  z-index: 2;
+  margin-left: -40px;
+}
+.home-adv-title span {
+  height: 50px;
+  width: 78px;
+  border-bottom: 2px solid #399E20;
+  margin-left: 20px;
+}
+.home-adv-left {
+  width: 33.3333333333%;
+}
+@media screen and (max-width: 1200px) {
+  .home-adv-left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.home-adv-right {
+  width: 66.6666666667%;
+}
+@media screen and (max-width: 1200px) {
+  .home-adv-right {
+    width: 100%;
+  }
+}
+.home-adv-list {
+  justify-content: center;
+  margin-bottom: -30px;
+}
+.home-adv-item {
+  width: 33.3333333333%;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .home-adv-item {
+    width: 50%;
+  }
+}
+.home-adv-item .box {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-adv-item .icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 500px) {
+  .home-adv-item .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+.home-adv-item span {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  font-size: 4rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 24px;
+}
+@media only screen and (max-width: 1200px) {
+  .home-adv-item span {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .home-adv-item span {
+    font-size: 2.7rem;
+  }
+}
+.home-adv-item span img {
+  margin-left: 8px;
+}
+.home-adv-item p {
+  font-size: 1.6rem;
+  color: #000000;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+.home-adv-content-text {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #000000;
+}
+@media only screen and (max-width: 1200px) {
+  .home-adv-content-text {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .home-adv-content-text {
+    font-size: 1.7rem;
+  }
 }
 
 .news-detail-wrap {
@@ -3632,6 +3692,4 @@ label {
   text-align: center;
   vertical-align: middle;
   border-bottom: 0;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
