@@ -6,12 +6,10 @@
     z-index: 100;
     position: fixed;
     width: 100%;
-
     &-wrap {
         height: 100%;
         position: relative;
         @include flex(center, space-between);
-
         .rectangle {
             height: 50px;
             width: 500px;
@@ -27,7 +25,6 @@
             @include max(1200px) {
                 display: none;
             }
-
             &::after {
                 content: '';
                 width: 100%;
@@ -39,9 +36,7 @@
                 left: 5px;
                 box-shadow: -10px -14px $color-green;
             }
-
         }
-
         .rectangle2 {
             height: 50px;
             width: 100px;
@@ -68,10 +63,8 @@
                 right: 6px;
                 box-shadow: 10px -14px $color-green;
             }
-
         }
     }
-
     &-icon {
         width: 144px;
         height: 144px;
@@ -88,9 +81,7 @@
             transform: rotate(0deg);
             top: 0;
             height: 100%;
-
         }
-
         .icon {
             width: 120px;
             height: 120px;
@@ -103,7 +94,6 @@
                 height: 100%;
                 width: auto;
             }
-
             img {
                 position: absolute;
                 width: 120px;
@@ -115,7 +105,6 @@
             }
         }
     }
-
     &-nav {
         width: 100%;
         margin: 0 15px;
@@ -127,7 +116,6 @@
         //old
         ul {
             @include flex(center, flex-start);
-
             li {
                 padding: 5px 10px;
                 background-color: $color-white;
@@ -136,54 +124,44 @@
                 transition: 0.3s;
                 cursor: pointer;
                 position: relative;
-
                 img {
                     width: 16px;
                     height: 16px;
                     margin-top: 12px;
                 }
-
                 a {
                     color: $color-black;
                 }
-
                 i {
                     margin-top: 12px;
                     opacity: 0.5;
                     font-size: 15px;
                     transition: 0.3s;
                 }
-
                 &:hover {
                     background-color: $color-green-light;
                     border-radius: 100px;
                 }
             }
         }
-
         //drop
         ul li {
             transition: 0.3s;
         }
-
         #menu {
             height: 100%;
             @include flex(center, stretch);
             border-radius: 12px;
             position: relative;
-
             .sqr {
                 @include sqr(16px);
-
             }
         }
-
         .parent {
             position: relative;
             height: 100%;
             background-color: transparent;
         }
-
         .parent a {
             @include flex(center, stretch);
             padding: 10px 5px;
@@ -193,7 +171,6 @@
             text-decoration: none;
             transition: 0.3s;
         }
-
         .parent:hover>ul {
             display: block;
             visibility: visible;
@@ -201,7 +178,6 @@
             position: absolute;
             transform: translateY(0px);
         }
-
         //
         .child {
             visibility: hidden;
@@ -226,7 +202,6 @@
                 transform: translateX(-50%) rotate(45deg);
             }
         }
-
         .child li {
             background-color: $color-white;
             width: 100%;
@@ -234,7 +209,6 @@
             border-radius: 0;
             @include flex(center, center);
             position: relative;
-
             &::after {
                 content: "";
                 width: 80%;
@@ -243,17 +217,14 @@
                 bottom: 0;
                 position: absolute;
             }
-
             &:first-child {
                 border-top-left-radius: 12px;
                 border-top-right-radius: 12px;
             }
-
             &:last-child {
                 border-bottom-left-radius: 12px;
                 border-bottom-right-radius: 12px;
                 border-bottom: 1px solid transparent;
-
                 &::after {
                     content: "";
                     width: 80%;
@@ -264,56 +235,45 @@
                 }
             }
         }
-
         .child li a {
             color: $color-black;
         }
-
         ul {
             list-style: none;
             margin: 0;
             padding: 0px;
             min-width: 10em;
         }
-
         ul ul ul {
             left: 100%;
             top: 0;
             margin-left: 1px;
         }
-
         li:hover {
             i {
                 transform: rotate(180deg);
             }
         }
-
         .parent li:hover {
             background-color: $color-green-light;
-
             a {
                 color: $color-green;
             }
-
             border-radius: 0;
-
             &:first-child {
                 border-top-left-radius: 12px;
                 border-top-right-radius: 12px;
             }
-
             &:last-child {
                 border-bottom-left-radius: 12px;
                 border-bottom-right-radius: 12px;
             }
         }
-
         .expand {
             float: right;
             margin-right: 5px;
             margin-left: auto;
         }
-
     }
     .btn {
         margin-left: auto;
@@ -325,7 +285,7 @@
         overflow: hidden;
         margin-left: 10px;
         cursor: pointer;
-        @include flex-col(center,center);
+        @include flex-col(center, center);
         display: none;
         z-index: 105;
         position: relative;
@@ -360,5 +320,4 @@
             }
         }
     }
-    
 }

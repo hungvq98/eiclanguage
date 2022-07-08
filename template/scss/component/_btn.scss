@@ -19,9 +19,11 @@
             color: $color-white;
             margin-top: -3px;
         }
-        &:hover::after {
-            width: calc(100% + 2px);
-            opacity: 1;
+        &:hover {
+            &::after {
+                width: calc(100% + 2px);
+                opacity: 1;
+            }
         }
         &::after {
             content: "";
