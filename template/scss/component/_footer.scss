@@ -14,6 +14,14 @@
         top: -58px;
         z-index: 2;
         transform: rotate(45deg);
+        cursor: pointer;
+        @include max(1200px) {
+            transform: rotate(0);
+            top: 0;
+        }
+        @include max(500px) {
+            margin: 0 auto;
+        }
         &::after {
             content: "";
             height: 40px;
@@ -24,6 +32,9 @@
             left: -2px;
             transform: rotate(103deg);
             z-index: 1;
+            @include max(1200px) {
+                display: none;
+            }
         }
         &::before {
             content: "";
@@ -35,10 +46,16 @@
             left: 101px;
             transform: rotate(75deg);
             z-index: 1;
+            @include max(1200px) {
+                display: none;
+            }
         }
         img {
             transform: rotate(-45deg);
             z-index: 2;
+            @include max(1200px) {
+                transform: rotate(0);
+            }
             &:nth-child(2) {
                 margin-top: -20px;
                 margin-left: -20px;
@@ -48,11 +65,17 @@
                 position: absolute;
                 top: -5px;
                 left: -68px;
+                @include max(1200px) {
+                    display: none;
+                }
             }
         }
     }
     &-wrap {
-        padding-bottom: 70px
+        padding-bottom: 70px;
+        @include max(1200px) {
+            padding: 56px 0;
+        }
     }
     &-menu {
         @include flexx;
