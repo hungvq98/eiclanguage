@@ -155,7 +155,7 @@
 
     .home-video {
         position: relative;
-        height: calc(100vw*(900/1920));
+        height: auto;
 
         .video-over {
             position: absolute;
@@ -213,7 +213,7 @@
 
             &-left {
                 padding-left: 90px;
-                width: 60%;
+                width: 65%;
             }
 
             &-title {

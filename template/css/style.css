@@ -273,7 +273,7 @@ select {
 
 .container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   height: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -446,7 +446,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: stretch;
-  padding: 10px 10px !important;
+  padding: 10px 5px;
   height: 100%;
   font-size: 14px;
   color: #000000;
@@ -786,6 +786,8 @@ label {
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
+  transition: 0.3s;
+  cursor: pointer;
 }
 .btn-login {
   background: linear-gradient(to right, #399E20, #007719);
@@ -798,6 +800,22 @@ label {
 .btn-login span {
   color: #FFFFFF;
   margin-top: -3px;
+}
+.btn-login:hover::after {
+  width: calc(100% + 2px);
+  opacity: 1;
+}
+.btn-login::after {
+  content: "";
+  height: calc(100% + 2px);
+  width: 0%;
+  position: absolute;
+  left: -3px;
+  z-index: -1;
+  border-radius: 100px;
+  border: 2px solid #399E20;
+  opacity: 0;
+  transition: 0.3s;
 }
 .btn-language {
   background-color: #399E20;
@@ -2705,7 +2723,7 @@ label {
 }
 .main .home-video {
   position: relative;
-  height: 46.875vw;
+  height: auto;
 }
 .main .home-video .video-over {
   position: absolute;
@@ -2774,7 +2792,7 @@ label {
 }
 .main .home-video-bottom-left {
   padding-left: 90px;
-  width: 60%;
+  width: 65%;
 }
 .main .home-video-bottom-title {
   margin-bottom: 42px;

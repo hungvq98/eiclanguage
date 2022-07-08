@@ -5,6 +5,8 @@
     border-radius: 100px;
     @include flex(center,center);
     color: $color-white;
+    transition: 0.3s;
+    cursor: pointer;
     &-login {
         background:linear-gradient(to right, $color-green, $color-green-dark);
         min-width: 147px;
@@ -15,6 +17,22 @@
         span {
             color: $color-white;
             margin-top: -3px;
+        }
+        &:hover::after {
+            width: calc(100% + 2px);
+            opacity: 1;
+        }
+        &::after {
+            content: "";
+            height: calc(100% + 2px);
+            width: 0%;
+            position: absolute;
+            left: -3px;
+            z-index: -1;
+            border-radius: 100px;
+            border: 2px solid $color-green;
+            opacity: 0;
+            transition: 0.3s;
         }
         
     }

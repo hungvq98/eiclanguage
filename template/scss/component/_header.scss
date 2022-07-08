@@ -164,7 +164,7 @@
 
         .parent a {
             @include flex(center, stretch);
-            padding: 10px 10px !important;
+            padding: 10px 5px;
             height: 100%;
             font-size: 14px;
             color: $color-black;
