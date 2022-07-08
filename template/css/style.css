@@ -2530,7 +2530,7 @@ section {
 .t-title.line::after {
   content: "";
   position: absolute;
-  height: 1px;
+  height: 2px;
   width: 70px;
   background-color: #399E20;
   left: 101%;
@@ -2557,6 +2557,16 @@ section {
 
 .c-white {
   color: white;
+}
+
+.cir {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #399E20;
+  margin: 0 16px;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .about .banner {
@@ -4071,4 +4081,6 @@ section {
   text-align: center;
   vertical-align: middle;
   border-bottom: 0;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

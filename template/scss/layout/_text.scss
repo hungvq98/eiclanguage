@@ -38,7 +38,7 @@
         &::after {
             content: '';
             position: absolute;
-            height: 1px;
+            height: 2px;
             width: 70px;
             background-color: $color-green;
             left: 101%;
@@ -65,4 +65,12 @@
 
 .c-white {
     color: white;
+}
+
+.cir {
+    @include cir(6px);
+    background-color: $color-green;
+    margin: 0 16px;
+    display: inline-block;
+    margin-bottom: 10px;
 }
