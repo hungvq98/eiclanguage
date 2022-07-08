@@ -3,12 +3,13 @@
     padding: 10px 15px;
     outline: none;
     border-radius: 100px;
-    @include flex(center,center);
+    @include flex(center, center);
     color: $color-white;
     transition: 0.3s;
     cursor: pointer;
+    width: fit-content;
     &-login {
-        background:linear-gradient(to right, $color-green, $color-green-dark);
+        background: linear-gradient(to right, $color-green, $color-green-dark);
         min-width: 147px;
         i {
             margin-right: 10px;
@@ -34,7 +35,6 @@
             opacity: 0;
             transition: 0.3s;
         }
-        
     }
     &-language {
         background-color: $color-green;
@@ -48,7 +48,6 @@
         font-weight: 600;
         margin-right: 8px;
         background-color: $color-green;
-        
     }
     &-yellow {
         height: 64px;
