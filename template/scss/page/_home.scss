@@ -193,12 +193,17 @@
     }
     .home-slider {
         width: 100%;
-        height: calc(100vw*(800/1920));
         position: relative;
         overflow: hidden;
-        .bg {
-            @include imgCover;
-            width: 55%;
+        padding: 80px 0;
+        &::after {
+            content: "";
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(to right, $color-green, $color-green-dark);
+            position: absolute;
+            top: 0;
+            left:0;
             z-index: -1;
         }
         &-cover {
