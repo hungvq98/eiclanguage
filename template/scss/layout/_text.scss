@@ -1,0 +1,68 @@
+.t-title {
+    @include fz-40;
+    font-weight: 600;
+    color: $color-black;
+    position: relative;
+    width: fit-content;
+    @include max(1200px) {
+        padding-left: 20px;
+    }
+    &.m-nor {
+        margin-bottom: 40px;
+    }
+    &.decor {
+        &::before {
+            content: '';
+            position: absolute;
+            left: -42px;
+            top: -6px;
+            height: 77px;
+            width: 77px;
+            background-image: url(../assets/image/svg/sqr.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            @include max(1200px) {
+                left: -12px;
+                top: -4px;
+                width: 60px;
+                height: 60px;
+            }
+            @include max(800px) {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    &.line {
+        &::after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 70px;
+            background-color: $color-green;
+            left: 101%;
+            bottom: 18px;
+            @include max(1200px) {
+                display: none;
+            }
+        }
+    }
+    &.white {
+        color: white;
+        &::before {
+            filter: brightness(0) invert(1);
+        }
+        &::after {
+            background-color: white;
+        }
+    }
+}
+
+.c-pri {
+    color: $color-green;
+}
+
+.c-white {
+    color: white;
+}
