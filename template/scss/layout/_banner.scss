@@ -84,17 +84,6 @@
         display: none;
     }
 
-    #german:checked~.tab-wrap .runtab {
-        left: 0%;
-    }
-
-    #english:checked~.tab-wrap .runtab {
-        left: 33.3%;
-    }
-
-    #french:checked~.tab-wrap .runtab {
-        left: 66.6%;
-    }
 
     &-wrap {
         height: 102px;
@@ -171,6 +160,10 @@
             a {
                 color: $color-white;
             }
+
+            &.active {
+                background-color: red;
+            }
         }
     }
 
@@ -204,7 +197,7 @@
 
     &-content {
         background-color: $color-green-light;
-
+        
         &.wh {
             background-color: $color-white;
         }

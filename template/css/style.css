@@ -1460,15 +1460,6 @@ section {
 .tab input[type=radio] {
   display: none;
 }
-.tab #german:checked ~ .tab-wrap .runtab {
-  left: 0%;
-}
-.tab #english:checked ~ .tab-wrap .runtab {
-  left: 33.3%;
-}
-.tab #french:checked ~ .tab-wrap .runtab {
-  left: 66.6%;
-}
 .tab-wrap {
   height: 102px;
   width: 50%;
@@ -1540,6 +1531,9 @@ section {
 }
 .tab-wrap label a {
   color: #FFFFFF;
+}
+.tab-wrap label.active {
+  background-color: red;
 }
 .tab #german:checked ~ .tab-content .german {
   opacity: 1;
@@ -4367,4 +4361,6 @@ section {
   text-align: center;
   vertical-align: middle;
   border-bottom: 0;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
