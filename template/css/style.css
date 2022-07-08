@@ -1175,7 +1175,6 @@ label {
   color: rgba(0, 0, 0, 0.6);
 }
 
-<<<<<<< HEAD
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -1193,7 +1192,8 @@ label {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #399E20;
-=======
+}
+
 .menu-mobile {
   position: fixed;
   width: 0%;
@@ -1332,7 +1332,6 @@ section {
 }
 #vert-nav .submenu li a:hover {
   color: #007719;
->>>>>>> 2718cbc47a89785d3894c3fce1fd1a49793f33b6
 }
 
 .banner {
@@ -4294,6 +4293,4 @@ section {
   text-align: center;
   vertical-align: middle;
   border-bottom: 0;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
