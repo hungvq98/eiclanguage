@@ -21,9 +21,25 @@ export default function moduleSwiper() {
     var swiperHome = new Swiper(".sliderSwiper", {
         slidesPerView: 2.5,
         spaceBetween: 30,
-        loop: true,
         autoplay: true,
-
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },
+            1200: {
+                slidesPerView: 2.5,
+                spaceBetween: 50,
+            },
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true
@@ -33,9 +49,25 @@ export default function moduleSwiper() {
     var swiperfeel = new Swiper(".feelSwiper", {
         slidesPerView: 3.5,
         spaceBetween: 30,
-        loop: true,
         autoplay: true,
-
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },
+            1200: {
+                slidesPerView: 3.5,
+                spaceBetween: 50,
+            },
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -46,8 +78,29 @@ export default function moduleSwiper() {
         slidesPerView: 4,
         spaceBetween: 30,
         centeredSlides: true,
-        loop: true,
         autoplay: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 1.5,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1400: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+            },
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -56,7 +109,6 @@ export default function moduleSwiper() {
     var swiperSliders = new Swiper(".newsSmall-swiper", {
         slidesPerView: 3,
         spaceBetween: 30,
-        loop: true,
         autoplay: true,
         pagination: {
             el: ".swiper-pagination",

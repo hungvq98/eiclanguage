@@ -1,5 +1,6 @@
 .contact {
     position: relative;
+
     &-container {
         width: calc(100vw - (100vw - 1185px) / 2);
         margin-left: auto;
@@ -8,10 +9,12 @@
         flex-wrap: wrap;
         padding-left: 15px;
         max-width: 100%;
+
         @include max(768px) {
             padding-left: 0;
         }
     }
+
     .bg-over {
         background: $color-black-opa2;
         left: 0;
@@ -21,16 +24,19 @@
         position: absolute;
         z-index: 1;
     }
+
     .bg {
         @include mid;
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+
     &-wrap {
         flex: 1;
         height: 100%;
         margin-right: 120px;
+
         @include max(768px) {
             width: 100%;
             flex: initial;
@@ -40,30 +46,37 @@
             margin-right: 0;
         }
     }
+
     &-left {
         position: relative;
         z-index: 2;
         @include flex-col(flex-start, flex-start);
+
         &-content {
             margin-left: 90px;
+
             @include max(768px) {
                 margin-left: 0
             }
         }
     }
+
     &-title {
         @include flex(center, flex-start);
         margin-bottom: 60px;
+
         .title-sqr {
             position: relative;
             @include sqr(77px);
             border-radius: 6px;
             @include flex(center, center);
             margin-left: -132px;
+
             img {
                 width: 77px;
             }
         }
+
         .title-text {
             font-size: 40px;
             font-weight: 600;
@@ -71,6 +84,7 @@
             z-index: 2;
             margin-left: -40px;
         }
+
         span {
             height: 50px;
             width: 78px;
@@ -78,6 +92,7 @@
             margin-left: 20px;
         }
     }
+
     p {
         font-size: 16;
         font-weight: 400;
@@ -86,42 +101,52 @@
         max-width: 270px;
         line-height: 1.5;
     }
+
     .btn {
         max-width: 164px;
         font-size: 16px;
         font-weight: 600;
+
         img {
             margin-left: 6px;
         }
     }
+
     &-form {
         width: calc(100%*(5/12));
         background-color: $color-black-opa6;
         padding: 100px;
         z-index: 1;
         position: relative;
+
         @include max(1200px) {
             padding: 56px 15px;
         }
+
         @include max(768px) {
             width: 100%;
             padding-top: 100px;
         }
+
         &-info {
             position: relative;
             z-index: 2;
+
             .form-title {
                 @include flex(center, flex-start);
+
                 .title-sqr {
                     position: relative;
                     @include sqr(77px);
                     border-radius: 6px;
                     @include flex(center, center);
                     margin-left: -50px;
+
                     img {
                         width: 77px;
                     }
                 }
+
                 .title-text {
                     font-size: 40px;
                     font-weight: 600;
@@ -132,6 +157,7 @@
                     width: 275px;
                     line-height: 1.6;
                     position: relative;
+
                     &::after {
                         content: "";
                         height: 50px;
@@ -142,6 +168,7 @@
                     }
                 }
             }
+
             p {
                 font-size: 16;
                 font-weight: 400;
@@ -150,12 +177,14 @@
                 max-width: 270px;
                 line-height: 1.5;
             }
+
             form {
                 .form-wrap {
                     .inputBox {
                         position: relative;
                         width: 100%;
                         margin-bottom: 20px;
+
                         input {
                             width: 100%;
                             padding: 0 24px;
@@ -169,6 +198,14 @@
                             font-weight: 400;
                             transition: 0.3s;
                         }
+
+                        input::-webkit-outer-spin-button,
+                        input::-webkit-inner-spin-button {
+                            appearance: none;
+                            -moz-appearance: textfield;
+                            -webkit-appearance: none;
+                        }
+
                         textarea {
                             width: 100%;
                             height: 80px;
@@ -181,6 +218,7 @@
                             font-weight: 400;
                             transition: 0.3s;
                         }
+
                         span {
                             position: absolute;
                             left: 0;
@@ -191,6 +229,7 @@
                             font-weight: 400;
                             transition: 0.3s;
                         }
+
                         //first
                         input:valid~span,
                         input:focus~span {
@@ -201,6 +240,7 @@
                             background: $color-white;
                             color: $color-gray;
                         }
+
                         textarea:focus~span {
                             transform: translateX(10px) translateY(-12px);
                             font-size: 0.65em;
@@ -209,6 +249,7 @@
                             background: $color-white;
                             color: $color-gray;
                         }
+
                         span.active {
                             transform: translateX(10px) translateY(-12px);
                             font-size: 0.65em;
@@ -218,6 +259,7 @@
                             color: $color-gray;
                         }
                     }
+
                     .btn {
                         font-size: 16px;
                         font-weight: 400;
@@ -227,6 +269,7 @@
             }
         }
     }
+
     &-date {
         position: absolute;
         top: 50%;
@@ -238,6 +281,7 @@
         border-bottom-left-radius: 12px;
         @include flex-col(center, center);
         z-index: 2;
+
         @include max(768px) {
             right: 0;
             left: 0;
@@ -249,33 +293,42 @@
             flex-direction: row;
             transform: translate(0)
         }
+
         &-item {
             @include sqr(96px);
             @include flex-col(center, center);
+
             @include max(768px) {
                 width: 70px;
                 height: 70px;
             }
+
             .number {
                 @include fz-40;
                 font-weight: 600;
             }
+
             .text {
                 font-size: 14px;
                 font-weight: 600;
             }
+
             &:nth-child(1) {
                 background: linear-gradient(to right, $color-green, $color-green-dark);
+
                 .number,
                 .text {
                     color: $color-white;
                 }
             }
+
             &:nth-child(2) {
                 background: $color-green-light;
+
                 .number {
                     color: $color-green;
                 }
+
                 .text {
                     color: $color-black;
                 }

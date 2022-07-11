@@ -1,84 +1,120 @@
 .course-detail {
     border-bottom: 1px solid $color-black-opa2;
-    &-wrap  {
-        @include flex(stretch,flex-start);
+
+    &-wrap {
+        @include flex(stretch, flex-start);
         height: 100%;
+        flex-wrap: wrap-reverse;
     }
+
     &-left {
         width: 60%;
         padding-top: 100px;
         padding-bottom: 70px;
         padding-right: 24px;
+        @include max(600px) {
+            width: 100%;
+            padding-right: 0;
+        }
         .course-title {
             font-size: 40px;
             font-weight: 600;
             color: $color-black;
             margin-bottom: 30px;
         }
+
         .course-time {
             font-size: 24px;
             font-weight: 400;
-            @include flex(center,flex-start);
+            @include flex(center, flex-start);
             margin-bottom: 10px;
+
             span {
                 color: $color-gray;
                 font-weight: 600;
             }
+
             p {
                 color: $color-gray;
             }
         }
+
         .course-fee {
             font-size: 24px;
             font-weight: 400;
-            @include flex(center,flex-start);
+            @include flex(center, flex-start);
             margin-bottom: 30px;
+
             span {
                 color: $color-gray;
                 font-weight: 600;
             }
+
             p {
                 color: $color-green;
             }
         }
+
         .imgs {
             position: relative;
             overflow: hidden;
             max-height: 400px;
+
             img {
                 @include img100x;
             }
         }
-        
+
         .mona-img {
-            @include flex(flex-start,flex-start);
+            @include flex(flex-start, flex-start);
             flex-wrap: wrap;
             margin: 10px -6px;
+
             &-item {
                 margin: 6px;
                 width: calc(50% - 12px);
                 min-height: 400px;
                 position: relative;
                 overflow: hidden;
+                @include max(800px) {
+                    width: 100%;
+                }
                 img {
                     @include imgCover;
                 }
             }
         }
     }
+
     &-right {
         width: 40%;
         background-color: $color-green-light;
         padding: 24px;
         padding-top: 165px;
+        @include max(600px) {
+            width: 100%;
+            margin-top: 15px;
+        }
+
         .form-title {
             font-size: 24px;
             font-weight: 700;
             color: $color-black;
             margin-bottom: 16px;
         }
+
+        .form-sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 150px;
+        }
+
         form {
+
+
             .form-wrap {
+
+
                 .inputBox {
                     position: relative;
                     width: 100%;
@@ -151,10 +187,12 @@
                         color: $color-gray;
                     }
                 }
+
                 .btn {
                     font-size: 16px;
                     font-weight: 400;
                     width: max-content;
+
                     img {
                         margin-left: 10px;
                     }

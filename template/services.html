@@ -24,8 +24,8 @@
                     <ul id="menu">
                         <li class="parent fz16 fw6"><a href="">Về IEC Language</a></li>
                         <li class="parent fz16 fw6">
-                            <img src="./assets/image/svg/Star 1.svg" alt=""><a href="">Chương trình học</a><i
-                                class='bx bxs-chevron-down'></i>
+                            <img src="./assets/image/svg/Star 1.svg" alt=""><a href="">Chương trình học</a>
+                            <i class='bx bxs-chevron-down'></i>
                             <ul class="child">
                                 <li><a href="">Tiếng Đức</a></li>
                                 <li><a href="">Tiếng Anh</a></li>
@@ -45,7 +45,12 @@
                         <li class="parent fz16 fw6"><a href="">Tuyển dụng</a></li>
                     </ul>
                 </nav>
-                <a href="" class="btn btn-login"><i class='bx bx-user'></i><span class="fz16 fw6">Đăng nhập</span></a>
+                <div class="header-btn">
+                    <a href="" class="btn btn-login"><i class='bx bxs-pencil'></i><span class="fz16 fw6">Đăng
+                            ký</span></a>
+                    <a href="" class="btn btn-login"><i class='bx bx-user'></i><span class="fz16 fw6">Đăng
+                            nhập</span></a>
+                </div>
                 <div class="burger burger-js">
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
@@ -92,7 +97,6 @@
                 </div>
             </div>
         </div>
-
     </header>
     <div class="menu-mobile-over mobilemenuover-js"></div>
     <div class="main">
@@ -109,38 +113,46 @@
                 <h1>Dịch vụ khác</h1>
             </div>
         </div>
-        <div class="tab">
+        <div class="tab tab-js">
             <input type="radio" name="tab" checked id="german">
             <input type="radio" name="tab" id="english">
             <input type="radio" name="tab" id="french">
-            <div class="tab-wrap">
+            <div class="tab-wrap tabwrap-js">
                 <div class="runtab">
                     <div class="sqr wh"></div>
                 </div>
-                <label for="german"><a href="">Du học Đức</a></label>
-                <label for="english"><a href="">Lớp học tiếng Tây Ban Nha</a></label>
-                <label for="french"><a href="">Lớp học tiếng Ý</a></label>
+                <label class="tabBtn-js" for="german"><a href="">Du học Đức</a></label>
+                <label class="tabBtn-js" for="english"><a href="">Lớp học tiếng Tây Ban Nha</a></label>
+                <label class="tabBtn-js" for="french"><a href="">Lớp học tiếng Ý</a></label>
             </div>
             <div class="tab-content wh">
-                <div class="tab-content-wrap german">
+                <div class="tab-content-wrap tabPanel-js">
                     <div class="container">
-                        
+
                         <h2 class="t-title decor line m-nor">
                             <span class="c-black">Lộ trình học để đi du học đức</span>
                         </h2>
                         <div class="tab-content-box">
                             <p class="sub-title">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim adipiscing nunc, vulputate tellus sapien curabitur.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim adipiscing nunc, vulputate
+                                tellus sapien curabitur.
                             </p>
                             <div class="content services">
                                 <p>
-                                    Quis tellus viverra viverra porttitor. Et aliquet at pellentesque elit ac. In suscipit id tortor pharetra, massa netus porta. Eget dignissim urna, leo, gravida. Egestas consequat turpis id pretium. Congue diam pharetra sollicitudin mattis. Id a, velit
+                                    Quis tellus viverra viverra porttitor. Et aliquet at pellentesque elit ac. In
+                                    suscipit id tortor pharetra, massa netus porta. Eget dignissim urna, leo, gravida.
+                                    Egestas consequat turpis id pretium. Congue diam pharetra sollicitudin mattis. Id a,
+                                    velit
                                     purus in praesent.
                                 </p>
 
                                 <p>
-                                    Sed sed nunc in proin sagittis ornare. Est mauris erat integer ullamcorper quam platea nisi leo. Augue ac at aliquet accumsan, in augue praesent vitae sed. Nunc viverra a ultricies at congue tincidunt molestie diam risus. Platea gravida montes, ac at.
-                                    At aliquam sem pellentesque dictum. Est quis tortor, at ultrices feugiat sapien, odio ut dictum.
+                                    Sed sed nunc in proin sagittis ornare. Est mauris erat integer ullamcorper quam
+                                    platea nisi leo. Augue ac at aliquet accumsan, in augue praesent vitae sed. Nunc
+                                    viverra a ultricies at congue tincidunt molestie diam risus. Platea gravida montes,
+                                    ac at.
+                                    At aliquam sem pellentesque dictum. Est quis tortor, at ultrices feugiat sapien,
+                                    odio ut dictum.
                                 </p>
                             </div>
                         </div>
@@ -150,40 +162,57 @@
                     </div>
                     <div class="services-requires">
                         <div class="container">
-                            <div class="services-requires-wrap">
+                            <div class="services-requires-wrap requires-js">
                                 <h2 class="tab-content-title">
                                     <div class="title-sqr"><img src="./assets/image/svg/sqr.png" alt=""></div>
                                     <div class="title-text">
                                         Yêu cầu đầu vào đối với các hình thức sang Đức
                                     </div>
                                 </h2>
-                                <div class="services-requires-box">
-                                    <a href="" class="btn btn-green">Du học hệ đại học</a>
-                                    <a href="" class="btn btn-yellow">Du học nghề</a>
-                                    <a href="" class="btn btn-red">Đi theo dạng người thân (đoàn tụ)</a>
+                                <div class="services-requires-box ">
+                                    <div class="btn btn-green requires-btn-js ">Du học hệ đại học</div>
+                                    <div class="btn btn-yellow requires-btn-js">Du học nghề</div>
+                                    <div class="btn btn-red requires-btn-js">Đi theo dạng người thân (đoàn tụ)</div>
                                 </div>
-                                <div class="services-requires-info">
-                                    <div class="info-left mona-content">
-                                        <h3 class="info-title">Đối với hệ dự bị đại học</h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, enim in venenatis eu tristique scelerisque quam. Sit cras nunc aliquet malesuada aenean integer enim, massa. Maecenas blandit urna eget auctor. Ut ut nec lobortis ac cursus nulla feugiat ut
-                                            in. Sed augue gravida et accumsan augue.
-                                        </p>
-                                        <h3 class="info-title">Đối với hệ đại học</h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, enim in venenatis eu tristique scelerisque quam. Sit cras nunc aliquet malesuada aenean integer enim, massa. Maecenas blandit urna eget auctor. Ut ut nec lobortis ac cursus nulla feugiat ut
-                                            in. Sed augue gravida et accumsan augue.
-                                        </p>
-                                        <h3 class="info-title">Đối với du học Đức chương trình Thạc sĩ</h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, enim in venenatis eu tristique scelerisque quam. Sit cras nunc aliquet malesuada aenean integer enim, massa. Maecenas blandit urna eget auctor. Ut ut nec lobortis ac cursus nulla feugiat ut
-                                            in. Sed augue gravida et accumsan augue.
-                                        </p>
-                                    </div>
-                                    <div class="info-right">
-                                        <div class="imgs">
-                                            <img src="./assets/image/banner/services2.jfif" alt="">
+                                <div class="services-requires-info ">
+                                    <div class="services-info info-panel-js">
+                                        <div class="info-left mona-content">
+                                            <h3 class="info-title">Đối với hệ dự bị đại học</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, enim in
+                                                venenatis eu tristique scelerisque quam. Sit cras nunc aliquet malesuada
+                                                aenean integer enim, massa. Maecenas blandit urna eget auctor. Ut ut nec
+                                                lobortis ac cursus nulla feugiat ut
+                                                in. Sed augue gravida et accumsan augue.
+                                            </p>
+                                            <h3 class="info-title">Đối với hệ đại học</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, enim in
+                                                venenatis eu tristique scelerisque quam. Sit cras nunc aliquet malesuada
+                                                aenean integer enim, massa. Maecenas blandit urna eget auctor. Ut ut nec
+                                                lobortis ac cursus nulla feugiat ut
+                                                in. Sed augue gravida et accumsan augue.
+                                            </p>
+                                            <h3 class="info-title">Đối với du học Đức chương trình Thạc sĩ</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, enim in
+                                                venenatis eu tristique scelerisque quam. Sit cras nunc aliquet malesuada
+                                                aenean integer enim, massa. Maecenas blandit urna eget auctor. Ut ut nec
+                                                lobortis ac cursus nulla feugiat ut
+                                                in. Sed augue gravida et accumsan augue.
+                                            </p>
                                         </div>
+                                        <div class="info-right">
+                                            <div class="imgs">
+                                                <img src="./assets/image/banner/services2.jfif" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services-info info-panel-js">
+
+                                    </div>
+                                    <div class="services-info info-panel-js">
+
                                     </div>
                                 </div>
                             </div>
@@ -198,101 +227,115 @@
                                         Lộ trình các khoá học tiếng Đức
                                     </div>
                                 </h2>
-                                <div class="services-route-box">
+                                <div class="services-route-box route-js">
                                     <div class="route-left">
-                                        <a href="" class="btn btn-green">
+                                        <a href="" class="btn btn-green route-left-item route-btn-js">
                                             <h3>Giao tiếp 1 - 1</h3>
                                         </a>
-                                        <a href="" class="route-left-item">
+                                        <a href="" class="btn btn-green route-left-item route-btn-js">
                                             <h3>Ôn thi DTZ</h3>
                                         </a>
-                                        <a href="" class="route-left-item">
+                                        <a href="" class="btn btn-green route-left-item route-btn-js">
                                             <h3>Ôn thi TELC</h3>
                                         </a>
-                                        <a href="" class="route-left-item">
+                                        <a href="" class="btn btn-green route-left-item route-btn-js">
                                             <h3>Ôn thi GOETHE</h3>
                                         </a>
                                     </div>
                                     <div class="route-right">
-                                        <div class="route-right-item">
-                                            A1
-                                            <div class="route-right-item-txt">
-                                                <span>Tiếng Đức A1</span>
-                                                <p>36 buổi</p>
-                                                <p>34 buổi học + 2 buổi kiểm tra</p>
-                                            </div>
-                                            <div class="route-right-item-tooltip">
-                                                <div class="tooltip-ins">
-                                                    <div class="txt">Thời gian:
-                                                        <p>90 phút / buổi học</p>
+                                        <div class="route-right-box route-panel-js">
+                                            <div class="route-right-item">
+                                                A1
+                                                <div class="route-right-item-txt">
+                                                    <span>Tiếng Đức A1</span>
+                                                    <p>36 buổi</p>
+                                                    <p>34 buổi học + 2 buổi kiểm tra</p>
+                                                </div>
+                                                <div class="route-right-item-tooltip">
+                                                    <div class="tooltip-ins">
+                                                        <div class="txt">Thời gian:
+                                                            <p>90 phút / buổi học</p>
+                                                        </div>
+                                                        <div class="txt">Kết quả đạt được</div>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                            Adipiscing tortor, sit lectus cursus nulla consequat in.
+                                                        </p>
+                                                        <div class="arrow"></div>
                                                     </div>
-                                                    <div class="txt">Kết quả đạt được</div>
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tortor, sit lectus cursus nulla consequat in.
-                                                    </p>
-                                                    <div class="arrow"></div>
+                                                </div>
+                                            </div>
+                                            <div class="route-right-item">
+                                                A2
+                                                <div class="route-right-item-txt">
+                                                    <span>Tiếng Đức A2</span>
+                                                    <p>36 buổi</p>
+                                                    <p>34 buổi học + 2 buổi kiểm tra</p>
+                                                </div>
+                                                <div class="route-right-item-tooltip">
+                                                    <div class="tooltip-ins">
+                                                        <div class="txt">Thời gian:
+                                                            <p>90 phút / buổi học</p>
+                                                        </div>
+                                                        <div class="txt">Kết quả đạt được</div>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                            Adipiscing tortor, sit lectus cursus nulla consequat in.
+                                                        </p>
+                                                        <div class="arrow"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="route-right-item">
+                                                B1
+                                                <div class="route-right-item-txt">
+                                                    <span>Tiếng Đức B1</span>
+                                                    <p>36 buổi</p>
+                                                    <p>34 buổi học + 2 buổi kiểm tra</p>
+                                                </div>
+                                                <div class="route-right-item-tooltip">
+                                                    <div class="tooltip-ins">
+                                                        <div class="txt">Thời gian:
+                                                            <p>90 phút / buổi học</p>
+                                                        </div>
+                                                        <div class="txt">Kết quả đạt được</div>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                            Adipiscing tortor, sit lectus cursus nulla consequat in.
+                                                        </p>
+                                                        <div class="arrow"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="route-right-item">
+                                                B2
+                                                <div class="route-right-item-txt">
+                                                    <span>Tiếng Đức B2</span>
+                                                    <p>36 buổi</p>
+                                                    <p>34 buổi học + 2 buổi kiểm tra</p>
+                                                </div>
+                                                <div class="route-right-item-tooltip">
+                                                    <div class="tooltip-ins">
+                                                        <div class="txt">Thời gian:
+                                                            <p>90 phút / buổi học</p>
+                                                        </div>
+                                                        <div class="txt">Kết quả đạt được</div>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                            Adipiscing tortor, sit lectus cursus nulla consequat in.
+                                                        </p>
+                                                        <div class="arrow"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="route-right-item">
-                                            A2
-                                            <div class="route-right-item-txt">
-                                                <span>Tiếng Đức A2</span>
-                                                <p>36 buổi</p>
-                                                <p>34 buổi học + 2 buổi kiểm tra</p>
-                                            </div>
-                                            <div class="route-right-item-tooltip">
-                                                <div class="tooltip-ins">
-                                                    <div class="txt">Thời gian:
-                                                        <p>90 phút / buổi học</p>
-                                                    </div>
-                                                    <div class="txt">Kết quả đạt được</div>
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tortor, sit lectus cursus nulla consequat in.
-                                                    </p>
-                                                    <div class="arrow"></div>
-                                                </div>
-                                            </div>
+                                        <div class="route-right-box route-panel-js">
                                         </div>
-                                        <div class="route-right-item">
-                                            B1
-                                            <div class="route-right-item-txt">
-                                                <span>Tiếng Đức B1</span>
-                                                <p>36 buổi</p>
-                                                <p>34 buổi học + 2 buổi kiểm tra</p>
-                                            </div>
-                                            <div class="route-right-item-tooltip">
-                                                <div class="tooltip-ins">
-                                                    <div class="txt">Thời gian:
-                                                        <p>90 phút / buổi học</p>
-                                                    </div>
-                                                    <div class="txt">Kết quả đạt được</div>
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tortor, sit lectus cursus nulla consequat in.
-                                                    </p>
-                                                    <div class="arrow"></div>
-                                                </div>
-                                            </div>
+                                        <div class="route-right-box route-panel-js">
+                                            
                                         </div>
-                                        <div class="route-right-item">
-                                            B2
-                                            <div class="route-right-item-txt">
-                                                <span>Tiếng Đức B2</span>
-                                                <p>36 buổi</p>
-                                                <p>34 buổi học + 2 buổi kiểm tra</p>
-                                            </div>
-                                            <div class="route-right-item-tooltip">
-                                                <div class="tooltip-ins">
-                                                    <div class="txt">Thời gian:
-                                                        <p>90 phút / buổi học</p>
-                                                    </div>
-                                                    <div class="txt">Kết quả đạt được</div>
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tortor, sit lectus cursus nulla consequat in.
-                                                    </p>
-                                                    <div class="arrow"></div>
-                                                </div>
-                                            </div>
+                                        <div class="route-right-box route-panel-js">
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -413,7 +456,9 @@
                                         <img src="./assets/image/banner/itemSlider.png" alt="" class="img">
                                         <h3 class="title">Thêm các điểm đến hấp dẫn cho du học sinh Australia</h3>
                                         <p class="para">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tortor, sit lectus cursus nulla consequat in. Donec in nulla in tellus congue maecenas tempor, tellus.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tortor,
+                                            sit lectus cursus nulla consequat in. Donec in nulla in tellus congue
+                                            maecenas tempor, tellus.
                                         </p>
                                         <p class="xct">Xem chi tiết</p>
                                     </a>
@@ -423,7 +468,9 @@
                                         <img src="./assets/image/banner/itemSlider.png" alt="" class="img">
                                         <h3 class="title">Thêm các điểm đến hấp dẫn cho du học sinh Australia</h3>
                                         <p class="para">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tortor, sit lectus cursus nulla consequat in. Donec in nulla in tellus congue maecenas tempor, tellus.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tortor,
+                                            sit lectus cursus nulla consequat in. Donec in nulla in tellus congue
+                                            maecenas tempor, tellus.
                                         </p>
                                         <p class="xct">Xem chi tiết</p>
                                     </a>
@@ -433,7 +480,9 @@
                                         <img src="./assets/image/banner/itemSlider.png" alt="" class="img">
                                         <h3 class="title">Thêm các điểm đến hấp dẫn cho du học sinh Australia</h3>
                                         <p class="para">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tortor, sit lectus cursus nulla consequat in. Donec in nulla in tellus congue maecenas tempor, tellus.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tortor,
+                                            sit lectus cursus nulla consequat in. Donec in nulla in tellus congue
+                                            maecenas tempor, tellus.
                                         </p>
                                         <p class="xct">Xem chi tiết</p>
                                     </a>
@@ -443,7 +492,9 @@
                                         <img src="./assets/image/banner/itemSlider.png" alt="" class="img">
                                         <h3 class="title">Thêm các điểm đến hấp dẫn cho du học sinh Australia</h3>
                                         <p class="para">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tortor, sit lectus cursus nulla consequat in. Donec in nulla in tellus congue maecenas tempor, tellus.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tortor,
+                                            sit lectus cursus nulla consequat in. Donec in nulla in tellus congue
+                                            maecenas tempor, tellus.
                                         </p>
                                         <p class="xct">Xem chi tiết</p>
                                     </a>
@@ -453,7 +504,9 @@
                                         <img src="./assets/image/banner/itemSlider.png" alt="" class="img">
                                         <h3 class="title">Thêm các điểm đến hấp dẫn cho du học sinh Australia</h3>
                                         <p class="para">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tortor, sit lectus cursus nulla consequat in. Donec in nulla in tellus congue maecenas tempor, tellus.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tortor,
+                                            sit lectus cursus nulla consequat in. Donec in nulla in tellus congue
+                                            maecenas tempor, tellus.
                                         </p>
                                         <p class="xct">Xem chi tiết</p>
                                     </a>
@@ -463,7 +516,9 @@
                                         <img src="./assets/image/banner/itemSlider.png" alt="" class="img">
                                         <h3 class="title">Thêm các điểm đến hấp dẫn cho du học sinh Australia</h3>
                                         <p class="para">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tortor, sit lectus cursus nulla consequat in. Donec in nulla in tellus congue maecenas tempor, tellus.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing tortor,
+                                            sit lectus cursus nulla consequat in. Donec in nulla in tellus congue
+                                            maecenas tempor, tellus.
                                         </p>
                                         <p class="xct">Xem chi tiết</p>
                                     </a>
@@ -490,10 +545,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-content-wrap english">
+                <div class="tab-content-wrap tabPanel-js ">
 
                 </div>
-                <div class="tab-content-wrap french">
+                <div class="tab-content-wrap tabPanel-js">
 
                 </div>
             </div>
@@ -510,7 +565,8 @@
                         </h2>
                         <div class="contact-left-content">
                             <p>
-                                IEC mang lại khoá học chất lượng cao dành cho học viên không chỉ tại Việt Nam mà còn đang sinh sống và làm việc tại nước ngoài
+                                IEC mang lại khoá học chất lượng cao dành cho học viên không chỉ tại Việt Nam mà còn
+                                đang sinh sống và làm việc tại nước ngoài
                             </p>
                             <a href="" class="btn btn-login">Tìm hiểu thêm<img src="./assets/image/svg/arrow.svg"
                                     alt=""></a>
@@ -525,7 +581,8 @@
                             </h2>
                         </h2>
                         <p>
-                            Hãy nhập các thông tin của bạn ở phần form bên dưới và gửi lại cho chúng tôi nhé. Chúng tôi sẽ gửi cho bạn những thông tin mới nhất
+                            Hãy nhập các thông tin của bạn ở phần form bên dưới và gửi lại cho chúng tôi nhé. Chúng tôi
+                            sẽ gửi cho bạn những thông tin mới nhất
                         </p>
                         <form action="">
                             <div class="form-wrap">

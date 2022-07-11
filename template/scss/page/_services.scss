@@ -18,10 +18,24 @@
         &-box {
             @include flex(center, flex-start);
             margin-bottom: 30px;
+
         }
 
         &-info {
-            @include flex(center, flex-start);
+            .services-info {
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+                @include flex(center, flex-start);
+                width: 100%;
+                display: none;
+
+                &.open {
+                    opacity: 1;
+                    visibility: visible;
+                    display: flex;
+                }
+            }
 
             .info-title {
                 font-size: 24px;
@@ -67,7 +81,6 @@
         &-box {
             @include flex(flex-start, flex-start);
 
-
             .route-left {
                 width: 35%;
                 @include flex-col(flex-start, flex-start);
@@ -82,8 +95,16 @@
                     font-size: 24px;
                     font-weight: 600;
                     color: $color-black;
-                    padding: 22px 0;
+                    padding: 22px 14px;
                     width: 100%;
+                    background-color: transparent;
+                    border-radius: 0;
+                    justify-content: flex-start;
+                    &.active {
+                        border-radius: 12px;
+                        background-color: $color-green;
+                        color: $color-white;
+                    }
 
                     &:last-child {
                         border-bottom: 1px solid $color-black-opa2;
@@ -92,7 +113,18 @@
             }
 
             .route-right {
-                @include flex(flex-end, flex-start);
+
+                &-box {
+                    @include flex(flex-end, flex-start);
+                    opacity: 0;
+                    display: none;
+                    transition: 0.3s;
+
+                    &.open {
+                        display: flex;
+                        opacity: 1;
+                    }
+                }
 
                 &-item {
                     width: 200px;
@@ -246,6 +278,7 @@
                             border-bottom: 0;
                         }
                     }
+
                     th {
                         text-align: left;
                         padding: 16px;
@@ -289,6 +322,7 @@
                             font-weight: 700;
                             color: $color-white;
                         }
+
                         &.alone {
                             color: $color-green;
                             font-weight: 700;
