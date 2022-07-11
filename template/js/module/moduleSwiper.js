@@ -3,19 +3,18 @@ export default function moduleSwiper() {
         spaceBetween: 10,
         slidesPerView: 4,
         freeMode: true,
-        watchSlidesProgress: true,
-
+        watchSlidesProgress: true
     });
     var swiper2 = new Swiper(".mySwiper2", {
         spaceBetween: 10,
         autoplay: true,
         navigation: {
             nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            prevEl: ".swiper-button-prev"
         },
         thumbs: {
-            swiper: swiper,
-        },
+            swiper: swiper
+        }
     });
 
     var swiperHome = new Swiper(".sliderSwiper", {
@@ -27,6 +26,20 @@ export default function moduleSwiper() {
         pagination: {
             el: ".swiper-pagination",
             clickable: true
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            500: {
+                slidesPerView: 1
+            },
+            768: {
+                slidesPerView: 2
+            },
+            1200: {
+                slidesPerView: 2.5
+            }
         }
     });
 
@@ -38,20 +51,34 @@ export default function moduleSwiper() {
 
         pagination: {
             el: ".swiper-pagination",
-            clickable: true,
-        },
+            clickable: true
+        }
     });
 
     var swiperSlider = new Swiper(".newsSlider-swiper", {
         slidesPerView: 4,
-        spaceBetween: 30,
+        spaceBetween: 24,
         centeredSlides: true,
         loop: true,
         autoplay: true,
         pagination: {
             el: ".swiper-pagination",
-            clickable: true,
+            clickable: true
         },
+        breakpoints: {
+            0: {
+                slidesPerView: 1.1
+            },
+            500: {
+                slidesPerView: 1.5
+            },
+            768: {
+                slidesPerView: 2.5
+            },
+            1200: {
+                slidesPerView: 4
+            }
+        }
     });
     var swiperSliders = new Swiper(".newsSmall-swiper", {
         slidesPerView: 3,
@@ -60,7 +87,7 @@ export default function moduleSwiper() {
         autoplay: true,
         pagination: {
             el: ".swiper-pagination",
-            clickable: true,
-        },
+            clickable: true
+        }
     });
 }
