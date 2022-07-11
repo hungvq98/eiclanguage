@@ -7,21 +7,16 @@
     &-title {
         @include flex(center, flex-start);
         margin-bottom: 60px;
-
         .title-sqr {
             position: relative;
             @include sqr(77px);
             border-radius: 6px;
-
             @include flex(center, center);
             margin-left: -42px;
-
             img {
                 width: 77px;
             }
-
         }
-
         .title-text {
             font-size: 40px;
             font-weight: 600;
@@ -29,7 +24,6 @@
             z-index: 2;
             margin-left: -40px;
         }
-
         span {
             height: 50px;
             width: 78px;
@@ -42,67 +36,40 @@
     }
     &-item {
         padding: 24px;
-        width: 90%;
         box-shadow: $shadow31;
         border-radius: 12px;
         border-bottom: 5px solid $color-green-dark;
         text-align: left;
-        display: flex;
-        flex-direction: column;
-        .img {
-            min-height: 200px;
-            border-radius: 12px;
-            margin-bottom: 24px;
-            img {
-                @include img100x;
-            }
-        }
         .title {
-            color:$color-black;
+            color: $color-black;
             font-size: 24px;
             font-weight: 600;
             margin-bottom: 24px;
-            display: block;
-            display: -webkit-box;
-            max-width: 100%;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
         .para {
             font-size: 16px;
             font-weight: 400;
             color: $color-gray;
             margin-bottom: 24px;
-
-            display: block;
-            display: -webkit-box;
-            max-width: 100%;
-            -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-
-        }
-        .bold {
-            font-weight: 700;
-            font-size: 16px;
-            color: $color-gray;
-        }
-        .green {
-            color: $color-green;
-            display: inline;
-            font-weight: 400;
-        }
-        .thin {
-            font-weight: 400;
-            display: inline;
         }
         .xct {
             color: $color-green;
             font-size: 16px;
             font-weight: 600;
+        }
+    }
+    &-img {
+        padding-top: calc(100%*(200/366));
+        overflow: hidden;
+        border-radius: 12px;
+        display: block;
+        margin-bottom: 24px;
+        position: relative;
+        img {
+            @include mid;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
     &-scroll {
@@ -116,13 +83,12 @@
             margin-left: auto;
             width: 190px;
             &-box {
-                span{
+                span {
                     color: $color-gray;
                 }
-            } 
+            }
         }
     }
-
 }
 
 //small
@@ -135,21 +101,16 @@
     &-title {
         @include flex(center, flex-start);
         margin-bottom: 60px;
-
         .title-sqr {
             position: relative;
             @include sqr(77px);
             border-radius: 6px;
-
             @include flex(center, center);
             margin-left: -42px;
-
             img {
                 width: 77px;
             }
-
         }
-
         .title-text {
             font-size: 40px;
             font-weight: 600;
@@ -158,7 +119,6 @@
             z-index: 2;
             margin-left: -40px;
         }
-
         span {
             height: 50px;
             width: 78px;
@@ -176,8 +136,6 @@
         border-radius: 12px;
         border-bottom: 5px solid $color-green-dark;
         text-align: left;
-        display: flex;
-        flex-direction: column;
         .img {
             min-height: 200px;
             border-radius: 12px;
@@ -187,46 +145,16 @@
             }
         }
         .title {
-            color:$color-black;
+            color: $color-black;
             font-size: 24px;
             font-weight: 600;
             margin-bottom: 24px;
-            display: block;
-            display: -webkit-box;
-            max-width: 100%;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
         .para {
             font-size: 16px;
             font-weight: 400;
             color: $color-gray;
             margin-bottom: 24px;
-
-            display: block;
-            display: -webkit-box;
-            max-width: 100%;
-            -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        
-        .bold {
-            font-weight: 700;
-            font-size: 16px;
-            color: $color-gray;
-        }
-        .green {
-            color: $color-green;
-            display: inline;
-            font-weight: 400;
-        }
-        .thin {
-            font-weight: 400;
-            display: inline;
         }
         .xct {
             color: $color-green;
@@ -245,11 +173,10 @@
             margin-left: auto;
             width: 190px;
             &-box {
-                span{
+                span {
                     color: $color-gray;
                 }
-            } 
+            }
         }
     }
-
 }

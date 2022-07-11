@@ -2,26 +2,14 @@
     .banner {
         height: calc(100vw*(800/1920));
 
-        @include max(500px) {
-            height: calc(100vw*(1000/1920));
-        }
-
         &-img {
             height: calc(100vw*(800/1920));
             width: 55%;
+            background-color: $color-blue;
             position: absolute;
             right: -50px;
             top: 0;
-            z-index: 52;
-
-            @include max(800px) {
-                display: none;
-            }
-
-            @include max(500px) {
-                height: calc(100vw*(1000/1920));
-                width: 65%;
-            }
+            z-index: 2;
 
             @include flex-col(flex-start, flex-start);
 
@@ -39,14 +27,7 @@
                 padding: 5px;
                 height: 100%;
                 width: 25%;
-                filter: grayscale(1);
-                transition: 0.3s;
-                &:hover {
-                    filter: grayscale(0);
-                }
-                img {
-                    @include img100x;
-                }
+                background-color: red;
             }
         }
 
@@ -63,6 +44,7 @@
         &-slogan {
             height: 100%;
             @include flex-col(flex-start, center);
+
             h1 {
                 margin-bottom: 20px;
                 font-size: 56px;
@@ -74,33 +56,6 @@
 
                 &:nth-child(2) {
                     color: $color-green;
-
-                    @include max(1500px) {
-                        -webkit-text-stroke-width: 1px;
-                        -webkit-text-stroke-color: $color-white;
-                        font-weight: 800;
-                    }
-
-                    @include max(375px) {
-                        -webkit-text-stroke-width: 1px;
-                        -webkit-text-stroke-color: $color-black-opa2;
-                    }
-
-                }
-
-                @include max(1200px) {
-                    font-size: 45px;
-                    margin-bottom: 0px;
-                }
-
-                @include max(800px) {
-                    font-size: 30px;
-                    margin-bottom: 0px;
-                }
-
-                @include max(375px) {
-                    font-size: 20px;
-                    margin-bottom: 0px;
                 }
             }
 
@@ -109,14 +64,6 @@
                 font-weight: 700;
                 color: $color-black;
                 max-width: 486px;
-
-                @include max(1200px) {
-                    font-size: 16px;
-                }
-
-                @include max(426px) {
-                    font-size: 13px;
-                }
             }
         }
 
@@ -124,15 +71,20 @@
             .banner-shape {
                 &:nth-child(1) {
                     opacity: 1;
+                    left: -289px;
+                    top: -115px;
                 }
 
                 &:nth-child(2) {
+                    left: -368px;
                     z-index: 2;
                 }
 
                 &:nth-child(3) {
                     background-color: $color-green;
                     opacity: 0.2;
+                    left: -151px;
+                    top: 432px;
                 }
             }
         }
@@ -144,7 +96,6 @@
         &-wrap {
             padding: 100px 0;
             @include flex(flex-start, flex-start);
-            flex-wrap: wrap;
         }
 
         &-title {
@@ -180,21 +131,11 @@
             font-size: 24px;
             font-weight: 600;
             color: $color-black;
-            @include max(1200px) {
-                font-size: 2rem;
-            }
-            @include max(800px) {
-                font-size: 1.7rem;
-            }
         }
 
         &-left {
             width: 50%;
             padding-right: 10%;
-
-            @include max(1060px) {
-                width: 100%;
-            }
         }
 
         &-right {
@@ -203,31 +144,10 @@
             @include flex(flex-start, flex-start);
             flex-wrap: wrap;
 
-            @include max(1060px) {
-                width: 100%;
-                @include flex(flex-start, center);
-            }
-
             &-item {
                 @include flex(flex-start, flex-start);
                 width: 50%;
                 margin-bottom: 50px;
-
-                @include max(1060px) {
-                    @include flex(flex-start, center);
-                    width: 33.3%;
-                    margin-top: 30px;
-                }
-
-                @include max(950px) {
-                    @include flex(flex-start, center);
-                    width: 50%;
-                }
-
-                @include max(630px) {
-                    @include flex(flex-start, center);
-                    width: 100%;
-                }
 
                 &:last-child {
                     margin-bottom: 0px;
@@ -286,47 +206,27 @@
             margin-bottom: 24px;
             @include flex(stretch, flex-start);
 
-            @include max(850px) {
-                width: 100%;
-                margin-bottom: 10px;
-            }
-
             .item-left {
                 width: 100px;
                 min-height: 150px;
                 padding-right: 25px;
+                
                 @include flex(center, center);
-                @include max(426px) {
-                    display: none;
 
-                }
                 img {
                     @include sqr(72px);
-
-                    @include max(426px) {
-                        display: none;
-                    }
                 }
             }
 
             .item-right {
                 border-left: 1px solid $color-green;
                 padding: 10px 30px;
-                @include max(426px) {
-                    border: none;
-                    padding: 15px 0;
-                }
                 h1 {
                     font-size: 40px;
                     font-weight: 600;
                     color: $color-black;
                     margin-bottom: 16px;
-                    @include max(800px) {
-                        font-size: 2rem;
-                        margin-bottom: 0;
-                    }
                 }
-
                 p {
                     font-size: 16px;
                     font-weight: 400;

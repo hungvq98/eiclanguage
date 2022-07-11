@@ -7,12 +7,6 @@
         font-size: 56px;
         font-weight: 600;
         color: $color-white;
-        @include max(800px) {
-            font-size: 40px;
-        }
-        @include max(426px) {
-            font-size: 30px;
-        }
     }
 
     .bg {
@@ -41,50 +35,44 @@
     &-over {
         position: absolute;
         height: 100%;
-        width: 100%;
-        z-index: 2;
-        left: -50%;
-        top: 50%;
-        transform: rotate(45deg) translateY(-50%);
-        @include max(450px) {
-            width: 150%;
-            left: -80%;
-        }
+        z-index: 20;
     }
 
     &-shape {
         &:nth-child(1) {
-            width: 40%;
-            height:calc(50% - 15px);
+            width: 490px;
+            height: 320px;
             border-radius: 24px;
-            left: 0;
-            top: 0;
+            left: -165px;
+            top: -115px;
             opacity: 0.5;
             background-color: $color-green;
             position: absolute;
-            margin-bottom: 30px;
+            transform: rotate(45deg);
         }
 
         &:nth-child(2) {
-            width: 40%;
-            height:50%;
+            width: 490px;
+            height: 320px;
             border-radius: 24px;
             background-color: $color-yellow;
             position: absolute;
-            left: 0;
-            bottom:0;
+            left: -410px;
+            top: 130px;
+            transform: rotate(45deg);
 
         }
 
         &:nth-child(3) {
-            width: calc(60% - 15px);
-            height: 70%;
+            width: 815px;
+            height: 532px;
             border-radius: 24px;
             opacity: 0.2;
             background: $color-white;
+            transform: rotate(45deg);
             position: absolute;
-            right: 0;
-            bottom: 0;
+            left: -118px;
+            top: 529px;
         }
     }
 }
@@ -96,10 +84,21 @@
         display: none;
     }
 
+    #german:checked~.tab-wrap .runtab {
+        left: 0%;
+    }
+
+    #english:checked~.tab-wrap .runtab {
+        left: 33.3%;
+    }
+
+    #french:checked~.tab-wrap .runtab {
+        left: 66.6%;
+    }
 
     &-wrap {
         height: 102px;
-        width: 80%;
+        width: 50%;
         margin: auto;
         @include flex(center, center);
         position: relative;
@@ -107,14 +106,13 @@
         .runtab {
             position: absolute;
             bottom: 0;
+            width: 33.3%;
             height: 100%;
             left: 0;
             bottom: -94px;
             @include flex(center, center);
             transition: 0.3s;
-            @include max(1200px) {
-                display: none;
-            }
+
             .sqr {
                 width: 100px;
                 height: 100px;
@@ -162,27 +160,46 @@
         }
 
         label {
+            width: 33.3%;
             height: 100%;
-            width: 100%;
             text-align: center;
             font-size: 24px;
             font-weight: 600;
             color: $color-white;
             @include flex(center, center);
-            margin: 0px 10px;
-            
-            @include max(1200px) {
-                border-bottom: 4px solid transparent;
-                transition: 0.3s;
 
-                &.active {
-                    border-bottom: 4px solid $color-yellow;
-                }
-            }
             a {
                 color: $color-white;
             }
         }
+    }
+
+
+    #german:checked~.tab-content .german {
+        opacity: 1;
+        transform: translateY(0px);
+        visibility: visible;
+        transition: 0.3s;
+        height: auto;
+        padding: 70px 0;
+    }
+
+    #english:checked~.tab-content .english {
+        opacity: 1;
+        transform: translateY(0px);
+        visibility: visible;
+        transition: 0.3s;
+        height: auto;
+        padding: 70px 0;
+    }
+
+    #french:checked~.tab-content .french {
+        opacity: 1;
+        transform: translateY(0px);
+        visibility: visible;
+        transition: 0.3s;
+        height: auto;
+        padding: 70px 0;
     }
 
     &-content {
@@ -196,22 +213,36 @@
 
         &-wrap {
             width: 100%;
-            opacity: 0;
-            transform: translateY(10px);
-            visibility: hidden;
-            transition: 0.3s;
-            padding: 0;
-            height: 0px;
 
-            &.open {
-                width: 100%;
-                opacity: 1;
+
+            &.german {
+                opacity: 0;
                 transform: translateY(10px);
-                visibility: visible;
-                padding: 70px 0;
-                height: auto;
+                visibility: hidden;
+                transition: 0.3s;
+                padding: 0;
+                height: 0px;
             }
 
+            &.english {
+                opacity: 0;
+                transform: translateY(10px);
+                visibility: hidden;
+                transition: 0.3s;
+                padding: 0;
+                height: 0px;
+
+            }
+
+            &.french {
+                opacity: 0;
+                transform: translateY(10px);
+                visibility: hidden;
+                transition: 0.3s;
+                padding: 0;
+                height: 0px;
+
+            }
         }
 
         &-title {
@@ -324,9 +355,7 @@
             bottom: -94px;
             @include flex(center, center);
             transition: 0.3s;
-            @include max(1200px) {
-                display: none;
-            }
+
             .sqr {
                 width: 100px;
                 height: 100px;
@@ -367,14 +396,7 @@
             font-weight: 600;
             color: $color-white;
             @include flex(center, center);
-            @include max(1200px) {
-                border-bottom: 4px solid transparent;
-                transition: 0.3s;
 
-                &.active {
-                    border-bottom: 4px solid $color-yellow;
-                }
-            }
             a {
                 color: $color-white;
             }
@@ -550,6 +572,7 @@
         max-height: 110px;
         overflow: hidden;
         transition: 0.5s;
+
         &.active {
             max-height: 100rem;
 
@@ -568,7 +591,6 @@
                 font-size: 24px;
                 font-weight: 700;
                 color: $color-black;
-                
             }
 
             img {
@@ -609,36 +631,24 @@
 
             .title {
                 @include flex(center, flex-start);
-                
+
                 .src-icon {
                     margin-right: 20px;
                     @include cir(56px);
                     @include flex(center, center);
                     flex-shrink: 0;
                     background: linear-gradient(to right, $color-green, $color-green-dark);
-                    @include max(900px) {
-                        @include cir(30px);
-                        img {
-                            @include cir(16px);
-                        }
-                    }
                 }
 
                 h4 {
                     font-size: 24px;
                     font-weight: 600;
                     color: $color-black;
-                    @include max(900px) {
-                        font-size: 16px;
-                    }
                 }
             }
 
             .arr {
                 transition: 0.3s;
-                @include max(900px) {
-                    @include cir(15px);
-                }
             }
         }
 
@@ -656,10 +666,6 @@
                 font-size: 24px;
                 font-weight: 600;
                 margin-right: 20px;
-                @include max(900px) {
-                    @include cir(30px);
-                    font-size: 16px;
-                }
             }
 
             .answerright {
