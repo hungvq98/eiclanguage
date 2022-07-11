@@ -1,17 +1,29 @@
-export default function() {
-    var itemCol = document.querySelectorAll(".collapsejs");
-
-    itemCol.forEach((e) => {
-        e.querySelector(".collapseHead-js").addEventListener("click", () => {
-            e.classList.toggle("active");
-
-            // e.style.height = e.querySelector('.body-js').clientHeight + 110 + 'px';
-        });
-        e.querySelectorAll(".collapseChild-js").forEach((k) => {
-            k.addEventListener("click", () => {
-                k.classList.toggle("active");
-                // e.style.height = e.querySelector('.body-js').clientHeight + 100 + 'px'
-            });
-        });
+export default function () {
+  const collapseHeads = document.querySelectorAll(
+    ".collapse-item-head.collapseHead-js"
+  );
+  const childHeads = document.querySelectorAll(
+    ".collapse-child.collapseChild-js .collapse-child-head"
+  );
+  if (collapseHeads) {
+    collapseHeads.forEach((item) => {
+      item.addEventListener("click", () => {
+        const body = item.parentElement.querySelector(
+          ".collapse-item-body.body-js"
+        );
+        $(body).slideToggle();
+        $(item).toggleClass("active");
+      });
     });
+  }
+  if (childHeads) {
+    childHeads.forEach((item) => {
+      item.addEventListener("click", () => {
+        const body = item.parentElement.querySelector(".collapse-child-body");
+        console.log(body);
+        $(body).slideToggle();
+        $(item).toggleClass("active");
+      });
+    });
+  }
 }
