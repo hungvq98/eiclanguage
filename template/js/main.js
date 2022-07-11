@@ -4,6 +4,8 @@ import collapseModule from "./module/collapseModule.js";
 import menumobileModule from "./module/menumobileModule.js";
 import sidebarMenuModule from "./module/sidebarMenuModule.js";
 import PopupModule from "./module/PopupModule.js";
+import tabModule from "./module/tabModule.js";
+import timerModule from "./module/timerModule.js";
 // import toTopModule from "./module/toTopModule.js"
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -13,5 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
     menumobileModule();
     sidebarMenuModule();
     PopupModule();
+    tabModule();
+    timerModule();
     // toTopModule();
 });
